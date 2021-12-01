@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	ShowBuckets()
+	bucket.ShowBuckets()
 	fmt.Println("test")
 
 }

@@ -18,6 +18,7 @@ func GetAllBuckets(c context.Context, api S3ListBucketsAPI, input *s3.ListBucket
 	return api.ListBuckets(c, input)
 }
 
+//shows list of buckets and their creation date, with the owner name & ID at the bottom of the list
 func ShowBuckets() {
 	cfg, err := config.LoadDefaultConfig(context.TODO())
 	if err != nil {
