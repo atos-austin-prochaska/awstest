@@ -1,11 +1,14 @@
 package main
 
 import (
+	A "awstest/aws"
 	"fmt"
 )
 
 func main() {
-	bucket.ShowBuckets()
+	A.ShowBuckets()
+	A.ShowKeys()
+	A.ShowObjects()
 	fmt.Println("test")
 
 }

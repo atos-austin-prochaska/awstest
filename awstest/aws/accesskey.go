@@ -20,6 +20,7 @@ func GetAccessKeys(c context.Context, api IAMListAccessKeysAPI, input *iam.ListA
 	return api.ListAccessKeys(c, input)
 }
 
+//shows active and inactive access keys for user
 func ShowKeys() {
 	maxItems := flag.Int("m", 10, "The maximum number of access keys to show")
 	userName := flag.String("u", "austin.prochaska@atos.net", "The name of the user")
