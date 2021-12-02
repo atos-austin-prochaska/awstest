@@ -22,6 +22,7 @@ func GetObjects(c context.Context, api S3ListObjectsAPI, input *s3.ListObjectsV2
 //should show objects in a bucket
 func ShowObjects() {
 	bucket := flag.String("b", "aws-cloudtrail-logs-529474296221-13c4af44", "The name of the bucket")
+
 	flag.Parse()
 
 	if *bucket == "" {

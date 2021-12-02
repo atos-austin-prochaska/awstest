@@ -8,7 +8,7 @@ import (
 func main() {
 	A.ShowBuckets()
 	A.ShowKeys()
-	A.ShowObjects()
+	//A.ShowObjects()
 	fmt.Println("test")
 
 }
