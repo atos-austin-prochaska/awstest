@@ -1,14 +1,7 @@
 package main
 
-import (
-	A "awstest/aws"
-	"fmt"
-)
+import "awstest/api"
 
 func main() {
-	A.ShowBuckets()
-	A.ShowKeys()
-	//A.ShowObjects()
-	fmt.Println("test")
-
+	api.Run()
 }
